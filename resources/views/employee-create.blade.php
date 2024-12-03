@@ -13,15 +13,15 @@
 <body>
     <div class="container">
         
-        <!-- @if ($errors->any())
+         @if ($errors->any())
             <div class="alert alert-danger">
                 <ul>
                     @foreach ($errors->all() as $error)
                         <li>{{ $error }}</li>
                     @endforeach
-        </ul> -->
+        </ul>
     </div>
-    <!-- @endif -->
+    @endif
     <div class="row col-md-12">
         <h1 class="text-center" style="color:darkblue">Add Employee</h1>
     </div>

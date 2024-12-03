@@ -26,14 +26,24 @@ class EmployeeController extends Controller
 
     public function store(Request $request)
     {
-        //dd($request->all());
+        // dd($request->all()); this is use for truable shoot
 
-        //Validate the incoming request data
-        // $request->validate([
-        //     'title' => 'required|string| max:255 ',
+        // Validate the incoming request data
+        $request->validate([
+            'fname' => 'required|string| max:255 ',
 
-        //     'content' => 'required |string',
-        // ]);
+            'contact' => 'required |string|max:255',
+
+            'email' => 'required|string|email|max:255|unique:employees',
+
+            'dob' =>'required|date',
+
+            'address' => 'required|string',
+
+            'yoe' =>'required|string',
+
+
+        ]);
 
 
 
